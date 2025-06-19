@@ -49,6 +49,7 @@ define Package/bind/Default
   SECTION:=net
   CATEGORY:=Network
   DEPENDS:=+bind-libs +@OPENSSL_WITH_EC
+  EXTRA_DEPENDS:=bind-libs (=$(PKG_VERSION)-r$(PKG_RELEASE))
   TITLE:=bind
   URL:=https://www.isc.org/software/bind
   SUBMENU:=IP Addresses and Names
