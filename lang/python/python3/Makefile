@@ -307,7 +307,6 @@ endif
 
 HOST_CONFIGURE_ARGS += \
 	--with-readline=no \
-	--enable-optimizations \
 	--disable-test-modules \
 	--with-ensurepip=upgrade \
 	--with-ssl-default-suites=openssl \
