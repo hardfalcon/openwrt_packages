@@ -6,12 +6,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libopusenc
-PKG_VERSION:=0.2.1
-PKG_RELEASE:=1
+PKG_VERSION:=0.3
+PKG_RELEASE:=0
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://archive.mozilla.org/pub/opus
-PKG_HASH:=8298db61a8d3d63e41c1a80705baa8ce9ff3f50452ea7ec1c19a564fe106cbb9
+PKG_SOURCE_URL:=https://downloads.xiph.org/releases/opus
+PKG_HASH:=f616d3aff9b2034547894ccb8ab56c36cf1a4acb0d922c5d7119f97bbe58642c
 
 PKG_MAINTAINER:=Eduardo Abinader <eduardoabinader@gmail.com>
 PKG_LICENSE:=BSD-3-Clause
