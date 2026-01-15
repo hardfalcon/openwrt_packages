@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=opus
-PKG_VERSION:=1.5.2
-PKG_RELEASE:=1
+PKG_VERSION:=1.6.1
+PKG_RELEASE:=0
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://downloads.xiph.org/releases/opus
-PKG_HASH:=65c1d2f78b9f2fb20082c38cbe47c951ad5839345876e46941612ee87f9a7ce1
+PKG_HASH:=6ffcb593207be92584df15b32466ed64bbec99109f007c82205f0194572411a1
 
 PKG_MAINTAINER:=Ted Hess <thess@kitchensync.net>, Ian Leonard <antonlacon@gmail.com>
 PKG_LICENSE:=BSD-3-Clause
