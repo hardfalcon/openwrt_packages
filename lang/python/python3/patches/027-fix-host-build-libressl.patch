@@ -1,17 +1,5 @@
 --- a/Modules/_ssl.c
 +++ b/Modules/_ssl.c
-@@ -74,7 +74,10 @@
- #  error "OPENSSL_THREADS is not defined, Python requires thread-safe OpenSSL"
- #endif
- 
--
-+#ifdef LIBRESSL_VERSION_NUMBER
-+/* LibreSSL does not define this for some reason, but it does implement it */
-+unsigned int X509_VERIFY_PARAM_get_hostflags(X509_VERIFY_PARAM *param);
-+#endif
- 
- struct py_ssl_error_code {
-     const char *mnemonic;
 @@ -4898,7 +4901,11 @@ _ssl__SSLContext_cert_store_stats_impl(P
      int x509 = 0, crl = 0, ca = 0, i;
  
